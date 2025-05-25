@@ -1,0 +1,215 @@
+/* Default reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure the body and html take up full height */
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(images/DigitalBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-container h1 {
+    color: lightskyblue;
+    padding: 10px 10px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* Header social icons */
+
+.header-social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-social a {
+    margin: 0 15px;
+    font-size: 30px; /* Adjust icon size */
+    color: white; /* Icon color */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header-social a:hover {
+    color: lightskyblue;
+}
+
+/* Navigation Styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: lightskyblue;
+}
+
+/* Main content section */
+
+.main-container {
+    position: relative;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* Allow the content to take available space */
+    width: 100%;
+}
+
+/* Header Styles */
+
+.header-container {
+    border: 2px solid black;
+    background-color: white;
+    padding: 0.5rem;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.header-container h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 4rem;
+}
+
+/* Paragraph Styles */
+
+.main-paragraph {
+    border: 2px solid black;
+    background-color: black;
+    margin-top: 1rem;
+    margin-right: auto;
+    padding: 0.5rem;
+    width: 20%;
+    border-radius: 8px;
+    color: lightskyblue;
+}
+
+.main-paragraph h2 {
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.read-more {
+    border: solid lightskyblue;
+    border-width: 2px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.read-more:hover {
+    color: lightskyblue;
+}
+
+/* Portfolio and Services button styles */
+.portfolio, .services {
+    border: solid lightskyblue;
+    border-width: 3px;
+    padding-inline: 3.23rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 10px;
+    font-size: 20px;
+    width: 9.8%;
+    transition: 0.3s;
+}
+
+.portfolio:hover, .services:hover {
+    color: lightskyblue;
+}
+
+/* Footer Styles */
+
+footer {
+    margin-top: auto; /* Ensures footer is pushed to the bottom */
+    background-color: black;
+    padding: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav ul {
+    gap: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: lightskyblue;
+}
+
+.footer-social {
+    position: absolute;
+    right: 0;
+}
+
+.footer-social a {
+    margin: 0 15px;
+    font-size: 30px; /* Adjust icon size */
+    color: white; /* Icon color */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: lightskyblue;
+}
