@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines Langauge -->
+<head>
+    <meta charset="UTF-8"> <!-- Defines character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- defines the viewport properties, optimizes the layout for different screen sizes.-->
+    <title>My Profile Page</title>
+<style>
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Set line height to 1.6 times the font size */
+    background-color: #e8e8ec;
+}
+
+/* Navigation Styling */
+.nav-container {
+    background-color: #333;
+    padding: 1rem 0; /* "padding: 1rem 0;" adjusts only vertical padding (top and bottom) and doesn't affect the sides */
+    position: sticky; /* "sticky" makes it so that it stays at the top of the screen when scrolling down */
+    top: 0;
+}
+
+.main-nav ul {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Displays the list horizontally */
+    justify-content: center; /* For centering items inside a flexbox or grid container. */
+    gap: 2rem; /* Creates a wider gap between the list items */
+}
+
+.main-nav a {
+    color: white; 
+    text-decoration: none; /* Removes the underline */
+    padding: 0.5rem 1rem; /* Creates a wider gap between the list items */
+    transition: color 0.3s ease; /* Creates a transition */
+}
+
+.main-nav a:hover {
+    color: #ffd700; /* Creates an animation when hovering over the link */
+}
+
+/* Header Styling */
+.header {
+    text-align: center; /* For centering text and inline elements. */
+    padding: 3rem 1rem; /* Creates some space from the top and bottom */
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+ /* Making the image responsive */
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Main Content Styling */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about-section, .services-section, .contact-section { /* Creating boxes for each section */
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Text Formatting */
+.highlight {
+    background-color: #ffd700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+em {
+    color: #666;
+    font-style: italic;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.email {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #ffd700
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Section -->
+    <div class="nav-container"> <!-- Creates a container to hold the navigation -->
+        <nav class="main-nav"> <!-- Specifies that this is the main Navigation of the page -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to My Website</h1>
+        <p>Where I am learning <em>HTML</em> and <em>CSS</em></p> <!-- <em> Italicizes the text -->
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content"> <!-- Wraps the main content sections -->
+        <div class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to my website! This is the first website I made to practice<span style="font-size: 1.2em;"> HTML</span> and <strong>CSS</strong></p>
+        </div>
+
+    <div class="services-section">
+        <h2>Our Services</h2>
+        <p>We specialize in:</p>
+        <ul>
+            <li><span class="highlight">Web Design</span></li> <!-- <span>: Inline styling with font-size -->
+            <li><em>Content Creation</em></li> <!-- <em>: Italicized text -->
+            <li><strong>Digital Marketing</strong></li> <!-- <strong>: Bold text -->
+        </ul>
+    </div>
+
+    <!-- Adding an image -->
+    <h2>About Me</h2>
+    <img src ="CSS/images/profile-picture.jpg" alt="Profile-picture">
+        <p class="main-paragraph">Hello! I'm learning web development. This is my first webpage where I'm practicing HTML and CSS.</p>
+        <div class="contact-section" id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch: <span class="email">aro.castello@gmail.com</span></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 My Website</p>
+            <nav class="footer-nav"> <!-- Specifies that this is the footer's navigation of the page -->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+</body>
+</html>
